@@ -1,0 +1,9 @@
+package user.service.entity.user;
+
+public class Hotel {
+
+	private String hotelid;
+	private String name;
+	private String location;
+	private String about;
+}

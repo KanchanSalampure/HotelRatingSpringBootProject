@@ -1,0 +1,9 @@
+spring.application.name=ApigateWay
+server.port=8085
+spring.cloud.gateway.routes[0].id=HOTEL
+spring.cloud.gateway.routes[0].uri=https://HOTEL
+spring.cloud.gateway.routes[0].predicates[0]=Path=/hotel/8606920a-50da-47b5-8c95-da656a02360b
+
+
+eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka
+eureka.instance.prefer-ip-address=true

@@ -1,0 +1,8 @@
+spring.application.name=ApigateWay
+server.port=8085
+spring.cloud.gateway.routes[0].id=USER
+spring.cloud.gateway.routes[0].uri=http://USER
+spring.cloud.gateway.routes[0].predicates[0]=Path=/users/**
+
+eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka
+eureka.instance.prefer-ip-address=true

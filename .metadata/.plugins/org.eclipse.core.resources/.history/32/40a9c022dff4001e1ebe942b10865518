@@ -1,0 +1,5 @@
+spring.application.name=ApigateWay
+
+spring.cloud.gateway.routes[0].id=USER
+spring.cloud.gateway.routes[0].uri=https://USER
+spring.cloud.gateway.routes[0].predicates[0]=Path=/users/**

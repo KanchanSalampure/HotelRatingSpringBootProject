@@ -1,0 +1,49 @@
+package user.service.service.user;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import user.service.entity.user.Users;
+import user.service.exception.ResoursceNotFoundException;
+import user.service.repository.user.UserRepository;
+@Service
+public class UserServiceImp implements UserService {
+ 
+	private Logger log=LoggerFactory.getLogger(UserServiceImp.class);
+	@Autowired
+	private UserRepository userrepo;
+	
+	@Autowired
+	private RestTemplate restTemplate;
+	
+	@Override
+	public Users saveuser(Users user) {
+	String ramdomUserID=UUID.randomUUID().toString();
+		user.setUserId(ramdomUserID);
+	return userrepo.save(user);
+	}
+
+	@Override
+	public List<Users> getallUsers() {
+		// TODO Auto-generated method stub
+		return userrepo.findAll();
+	}
+
+	@Override
+	public Users getusers(String id) {
+		
+		
+		Users u= userrepo.findById(id).orElseThrow(() -> new ResoursceNotFoundException("User give id Not found ="+id));
+		// http://localhost:8084/rating//UserRating/39ceb1ab-ad09-46d7-b01f-256e3ce8f50b
+	ArrayList<> forobject=restTemplate.getForObject(url:"http://localhost:8084/rating//UserRating/39ceb1ab-ad09-46d7-b01f-256e3ce8f50b")
+		return u;
+	}
+
+}

@@ -1,0 +1,5 @@
+package user.service.external.feignclients;
+
+public interface HotelService {
+
+}

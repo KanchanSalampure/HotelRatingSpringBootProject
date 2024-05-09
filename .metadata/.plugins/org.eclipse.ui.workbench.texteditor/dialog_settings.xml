@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="open"/>
+		<item key="selection" value="Consortium"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="Consortium"/>
+			<item value="consortium"/>
+			<item value="seq_nursingOdrSysId"/>
+			<item value="seq_nursingOdrSysIds"/>
+			<item value="ADD_DATA"/>
+			<item value="order"/>
+			<item value="nursing_odr_sys_id"/>
 			<item value="s"/>
 			<item value="&lt;dependency&gt;"/>
 			<item value="open"/>
@@ -16,7 +23,6 @@
 			<item value="req"/>
 			<item value="web"/>
 			<item value="spring-web"/>
-			<item value="spring web"/>
 		</list>
 		<list key="replacehistory">
 		</list>

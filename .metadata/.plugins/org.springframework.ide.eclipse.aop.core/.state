@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="Configserver"/>
+<aop-project name="springsecurityproject"/>
 <aop-project name="jdbcCurdOperation"/>
 <aop-project name="erp_ecib_uw_be"/>
 <aop-project name="erp_ecib_uw_fe"/>
